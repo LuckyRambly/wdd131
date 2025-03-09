@@ -1,0 +1,26 @@
+:root {
+  --color-principal: #461220;
+  --color-secundario: #EAD2AC;
+  --color-acento: #4D6A6D;
+  --color-texto: #FB3640;
+  --color-fondo: #FAA6FF;
+}
+/*
+.red-hat-text-<uniquifier> {
+  font-family: "Red Hat Text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}*/
+body {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+nav {
+    display: flex;
+}
+body {
+    display: grid;
+}
