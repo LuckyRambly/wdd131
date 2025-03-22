@@ -1,0 +1,177 @@
+:root {
+    --color-principal: #F9C80E;
+    --color-secundario: #F86624;
+    --color-acento: #EA3546;
+    --color-texto: #662E9B;
+    --color-fondo: #43BCCD;
+}
+/*
+.red-hat-text-<uniquifier> {
+  font-family: "Red Hat Text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}*/
+body {
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header {
+    display: flex;
+    flex-direction: column;
+}
+header h1 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    background-color: #43BCCD;
+    color: white;
+}
+header h1 span {
+    color: #662E9B;
+}
+header nav {
+    display: flex;
+    justify-content: center;
+    background-color: #F86624;
+    padding: 10px 0;
+}
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    transition: box-shadow 0.3s;
+}
+header nav a:hover {
+    color: #F9C80E;
+    transform: scale(1.1);
+}
+main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: auto;
+    margin: 20px auto;
+}
+.card {
+    width: 100%;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+}
+.card:nth-child(2) { 
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto auto; 
+}
+.card > div:first-child { 
+    grid-column: 1 / 3; 
+    background-color: #43BCCD;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.card:nth-child(2) > div:first-child {
+    grid-column: 1 / 2;
+    grid-column: 1 / 2;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid #ccc; 
+}
+.card > div:nth-child(2) { 
+    grid-column: 1 / 2; 
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+.card > div:nth-child(2) > p {
+    grid-row: 1 / 2;
+}
+.card > div:nth-child(2) > div {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+}
+.card > div:nth-child(2) > div > div {
+    /* Estilos existentes para el div de la bandera y el texto */
+    display: flex;
+    align-items: center;
+}
+.card > div:nth-child(2) > div img {
+    max-width: 100px;
+    height: auto;
+    margin: 5px;
+}
+.card > div:nth-child(2) > div h3 {
+    position: absolute; /* Posiciona el título absolutamente */
+    top: -30px; /* Ajusta la posición vertical */
+    left: 0; /* Alinea el título a la izquierda */
+    background-color: white; /* Asegura que el título tape el contenido de abajo */
+    padding: 5px; /* Añade un poco de relleno */
+}
+.card > div:last-child {
+    grid-column: 2 / 3; 
+    grid-row: 2 / 3; 
+    justify-self: end; 
+}
+.card > div:last-child img { 
+    max-width: 100%;
+    height: auto;
+}
+.card:nth-child(2) > div:last-child { 
+    grid-column: 1 / 2; 
+    grid-row: 2 / 3; 
+}
+.card:nth-child(2) > div:last-child ul {
+    list-style-type: disc; 
+    padding-left: 20px; 
+}
+.card:nth-child(2) > div:last-child ul a {
+    display: block;
+    margin-bottom: 5px; 
+    text-decoration: none; 
+    color: #EA3546; 
+    text-align: center;
+    justify-content: center;
+}
+#ram_portrait {
+    width: 200px;
+    height: 200px;
+}
+.card:nth-child(2) > div:last-child ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#card_list div {
+    max-height: 80px;
+    width: 98%;
+    justify-self: center;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+footer p {
+    margin: 5px 0;
+}
