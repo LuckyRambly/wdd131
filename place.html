@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Ramón Lamas. Place website of a country of my elecction.">
+    <meta name="author" content="Ramón Lamas">
+
+    <link rel="stylesheet" href="styles/place_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <script src="scripts/place_scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>🍁Canada🍁</h1>
+    </header>
+    <main class="main-container-desktop">
+      <div class="image-container-desktop">
+        <img class="desktop-image" src="images/hero_canada_big.webp" alt="Canada hero image for PC version">
+        <img class="mobile-image" src="images/hero_canada_mobile.webp" alt="Imagen principal para movil">
+        <div class="overlay-left-desktop">
+          <div class="data-container-desktop">
+            <h3>Data</h3>
+            <p>Area: 9.984.670 km²</p>
+            <p>Population: 40.381.196[</p>
+            <p>Capital: Ottawa</p>
+            <p>Languajes: English and french</p>
+            <p>Currency: Canadian dollar</p>
+            <p>Time zone: GMT -4</p>
+            <p>Calling code: +1</p>
+          </div>
+        </div>
+        <div class="overlay-right-desktop">
+          <div class="weather-container-desktop">
+              <h3><span class="weather-heading">Weather</span></h3>
+              <img class="weather-icon-mobile" src="images/weather_icon.svg" alt="Weather icon">
+              <p>Temperature: 9 °C</p>
+              <p>Conditions: Rainy</p>
+              <p>Wind: 5 km/h</p>
+              <p>Wind chill: Value</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Ramón Lamas, Venezuela</p>
+        <p id="lastModified">Last Modified:</p>
+    </footer>
+</body>
+</html>
