@@ -31,6 +31,11 @@ header h1 {
     color: #FF0000;
 }
 /*Main*/
+.hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 .mobile-image {
     display: none;
 }
