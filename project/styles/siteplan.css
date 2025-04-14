@@ -39,9 +39,6 @@ strong {
     color: #721121;
     font-weight: 900;
 }
-.color-schema li:nth-child(1) strong {
-    color: #FF8400;
-}  
 .color-schema li:nth-child(2) strong {
     color: #A5402D;
 }  
