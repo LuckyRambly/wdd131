@@ -1,0 +1,61 @@
+:root {
+    --color-principal: #FF8400;
+    --color-secundario: #A5402D;
+    --color-acento: #721121;
+    --color-texto: #172121;
+    --color-fondo: #FAF6F9;
+}
+/*.oswald {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.bangers-regular {
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}  */
+body {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 10;
+    font-size: 1.1rem;
+}
+h1, h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--color-principal);
+}
+.site-name {
+    font-family: "bangers", system-ui;
+}
+.icony {
+    width: 128px;
+    height: auto;
+}
+strong {
+    color: #721121;
+    font-weight: 900;
+}
+.color-schema li:nth-child(1) strong {
+    color: #FF8400;
+}  
+.color-schema li:nth-child(2) strong {
+    color: #A5402D;
+}  
+.color-schema li:nth-child(3) strong {
+    color: #721121;
+}  
+.color-schema li:nth-child(4) strong {
+    color: #172121;
+}
+.wireframe-web {
+    width: 480px;
+    height: auto;
+}
+.wireframe-mobile {
+    width: 280px;
+    height: auto;
+}
