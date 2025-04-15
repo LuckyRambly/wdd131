@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review confirmation</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Ramón Lamas. This is the page for receive the confirmation of the form/review from form.html">
+    <meta name="author" content="Ramón Lamas">
+    <link rel="stylesheet" href="styles/formstyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Thanks for your review!</h1>
+        <div id="reviewCounter"></div>
+        <p><a href="form.html">Get back to the form.</a></p>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const reviewCounterElement = document.getElementById('reviewCounter');
+            let reviewCount = localStorage.getItem('reviewCount');
+
+            if (reviewCount === null) {
+                reviewCount = 1;
+            } else {
+                reviewCount = parseInt(reviewCount) + 1;
+            }
+
+            localStorage.setItem('reviewCount', reviewCount);
+            reviewCounterElement.textContent = `Número de reseñas completadas: ${reviewCount}`;
+
+            // Opcional: Mostrar los datos del formulario (ya que se usa el método GET)
+            const urlParams = new URLSearchParams(window.location.search);
+            for (const [key, value] of urlParams) {
+                console.log(`${key}: ${value}`);
+                // Aquí podrías mostrar los datos en la página si lo deseas
+            }
+        });
+    </script>
+</body>
+</html>
