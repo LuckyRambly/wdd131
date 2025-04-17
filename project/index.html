@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <meta name="description" content="Welcome to the home page for the Mini Freelance Guide for Sam and Max Franchise! Here you are going to know how to start in this bizarre and chaotic world made by Steve Purcell.">
+    <meta name="author" content="Ramón Lamas">
+    <link rel="stylesheet" href="styles/index_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="scripts/index_scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/icony.webp" alt="Logo de Sam and Max">
+            <h1 class="page-title">Freelance Guide</h1>
+        </div>
+        <nav class="nav-desktop">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="comics.html">Comics</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger-menu">☰</button>
+        <nav class="nav-mobile">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="comics.html">Comics</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="hero-container">
+                <img class="hero-image" src="images/SAM_hero.webp" alt="Imagen Hero de Sam and Max" loading="lazy">
+            </div>
+            <h1>Welcome to a Mini Freelance Guide for Sam and Max Franchise</h1>
+            <p>Sam and Max were Steve Purcell's childhood creators, but it wasn't until 1987 that they made their official debut in the comic strip “Monkeys Violating The Heavenly Temple.”</p>
+            <p>From then on, more comics continued to be made about them until 1993 when their first video game was created: “Sam and Max: Hit The Road” which set the precedent for a compilation book of their greatest adventures: “Surfing the Road” in 1995. Eventually came an animated series in 1997 and years later a trilogy of games originally created by TellTale Games.</p>
+            <div class="card-container">
+                <a href="games.html" class="card-link">
+                    <div class="card">
+                        <img src="images/DPH_portrait.webp" alt="Sam and Max: Devil's Playhouse Portrait" loading="lazy">
+                        <h2>Games</h2>
+                        <p>Currently there are 8 Sam and Max games, the most popular and recommended being Devil's Playhouse!</p>
+                    </div>
+                </a>
+                <a href="comics.html" class="card-link">
+                    <div class="card">
+                        <img src="images/SH_portrait.webp" alt="Surfing Highroad Portrait" loading="lazy">
+                        <h2>Comics</h2>
+                        <p>Sam and Max have a lot of comics full of action, adventure, mystery, weird stuff and a lot of humor.</p>
+                    </div>
+                </a>
+                <a href="animated_series.html" class="card-link">
+                    <div class="card">
+                        <img src="images/AS_portrait2.webp" alt="Animated Series Portrait" loading="lazy">
+                        <h2>Animated Series</h2>
+                        <p>Created in 1997, with 24 episodes and 3 specials, it has very well valued chapters and with an essence without equal that you will not find in other series.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <section class="form-container">
+            <h2>Subscribe to our newsletter!</h2>
+            <form id="subscriptionForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="John Smith...">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email" placeholder="johnsmith@gmail.com..." required>
+                </div>
+                <button type="submit">Subscribe!</button>
+                <div id="formMessage" class="hidden"></div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Ramón Lamas -A no official page of Sam and Max</p>
+        <p class="footer-link"><a href="references.html">References</a></p>
+    </footer>
+</body>
+</html>

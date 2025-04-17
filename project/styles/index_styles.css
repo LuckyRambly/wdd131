@@ -1,0 +1,316 @@
+:root {
+    --color-principal: #FF8400;
+    --color-secundario: #A5402D;
+    --color-acento: #721121;
+    --color-texto: #172121;
+    --color-fondo: #FAF6F9;
+}
+body {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+/*Main*/
+.hero-image {
+    width: 100%;
+}
+main h1 {
+    font-family: "Bangers", sans-serif;
+}
+h1, h2, p {
+    text-align: center;
+}
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+}
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+}
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    justify-content: center;
+    justify-items: center;
+}
+.card {
+    width: 75%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    justify-content: center;
+}
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.card-link:hover .card {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.logo-container img {
+    height: 48px;
+    margin: 5px;
+}
+.logo-container h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+.nav-desktop ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.nav-desktop ul li {
+    margin: 5px;
+}
+.nav-desktop ul li:last-child {
+    margin-right: 0;
+}
+.nav-desktop a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+.nav-desktop a:hover {
+    color: #FF8400;
+}
+.hamburger-menu {
+    display: none;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 10px;
+}
+.nav-mobile {
+    display: none;
+    background-color: #333;
+    position: absolute;
+    top: 78px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 5px;
+    text-align: center;
+}
+.nav-mobile ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-mobile ul li {
+    margin: 5px;
+}
+.nav-mobile ul li:last-child {
+    margin-bottom: 0;
+}
+.nav-mobile a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+.nav-mobile.active {
+    display: block;
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+}
+footer p {
+    margin: 5px;
+}
+.footer-link {
+    margin-left: auto;
+}
+.footer-link a {
+    color: white;
+    text-decoration: none;
+}
+.footer-link a:hover {
+    text-decoration: underline;
+}
+/*Form stuff*/
+.form-container {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button[type="submit"] {
+    background-color: var(--color-principal);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+button[type="submit"]:hover {
+    background-color: var(--color-secundario);
+}
+#formMessage {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.hidden {
+    display: none;
+}
+.success {
+    color: green;
+}
+.error {
+    color: red;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        justify-content: space-between;
+    }
+    .nav-desktop {
+        display: none;
+    }
+    .page-title {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    .logo-container {
+        justify-content: flex-start;
+    }
+    .container {
+        width: 100%;
+    }
+    .card-container {
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-link {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .nav-mobile a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        transition: color 0.3s ease-in-out; 
+    }
+    .nav-mobile a:hover {
+        color: #FF8400;
+    }
+    .compilation-list {
+        grid-template-columns: 1fr;
+    }
+    .compilation-item {
+        padding: 10px;
+    }
+    .compilation-item h3 {
+        font-size: 1.3em;
+    }
+}
+/*Secondary pages*/
+.compilation-section {
+    padding: 20px;
+    background-color: #f9f9f9; 
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+.compilation-section h2 {
+    font-size: 2em;
+    color: var(--color-secundario); 
+    text-align: center;
+    margin-bottom: 25px;
+}
+.compilation-list {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+    gap: 20px; 
+}
+.compilation-item {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+}
+.compilation-item h3 {
+    font-size: 1.5em;
+    color: var(--color-acento); 
+    margin-bottom: 10px;
+}
+.compilation-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+.compilation-item p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: var(--color-texto);
+}
